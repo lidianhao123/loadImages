@@ -16,7 +16,7 @@
  * loadImages({
  *      data:["1.png", "2.png", "3.png"],
  *      step:function(num){},
- *      compelte: function(){},
+ *      complete: function(){},
  *      needOneStep: true,
  *      path:"/images"
  * });
