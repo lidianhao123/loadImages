@@ -20,3 +20,7 @@
  *      path:"/images"
  * });
 ```
+
+http://lidianhao123.github.io/loadImages/index.html
+
+![二维码](images/qrcode.png "二维码")
