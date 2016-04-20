@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>loadImages</title>  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <style>
+    div{font-size: 30px; text-align: center; padding-top: 100px;}
+  </style>
+</head>
+<body>
+  <div id="percent">加载中...<span>0%</span></div>
+
+  <script src="js/require.js"></script>
+  <script src="js/require-config.js"></script>
+  <script>
+    require(["zepto","loadImages"],function (zepto,loadImages) {
+      loadImages({
+          data:['1.jpg','2.jpg','3.jpg','4.jpg','5.jpg','6.jpg','7.jpg','8.jpg','9.jpg','10.jpg','11.jpg','12.jpg','13.jpg','14.jpg'],
+          step:function(num){
+              $("#percent span").text(num+"%");
+          },
+          complete: function(){
+            $("#percent").html("加载完成！");
+          },
+          needOneStep: true,//true or false
+          path:"images/"
+        });
+    })
+  </script>
+</body>
+</html>
