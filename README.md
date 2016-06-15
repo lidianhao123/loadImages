@@ -2,7 +2,7 @@
 用于Html5预加载图片资源插件，具备加载进度功能
 
 ```javascript
-* @description loadImages can preload images and after each image load completed can callback process
+ * @description loadImages can preload images and after each image load completed can callback process
  * @param  {object} options - past setting parameters
  * @param  {string[]} options.data - images url array
  * @callback options.step - each step callback function
@@ -20,3 +20,5 @@
  *      path:"/images"
  * });
 ```
+
+http://lidianhao123.github.io/loadImages/index.html
